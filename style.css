@@ -53,6 +53,7 @@ nav ul li:first-child a{
     cursor:pointer;
     display: none;
 }
+
 @media only screen and (max-width:940px){
     nav ul{
         position: fixed;
@@ -94,4 +95,58 @@ header{
     background-image: url(images/No-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+/* first section of main tag code star*/
+#first-section{
+    background-color: #16213E;
+}
+#service-parent{
+    width:1100px;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:25px;
+    padding-bottom: 100px;
+}
+.single-service{
+    background-color: white;
+    text-align: center;
+    color: black;
+    padding: 30px 20px;
+    border-radius: 5px;
+    border:3px solid green;
+    box-shadow: 5px 5px 10px gray;
+}
+.single-service i{
+    font-size: 40px;
+}
+.single-service h2{
+    margin: 10px 0;
+    font-weight: bold;
+}
+#first-section > h2{
+    text-align: center;
+    color:white;
+    padding:50px 0;
+    letter-spacing: 0.2em;
+    font-weight: 28px;
+}
+/*first section media star*/
+@media only screen and (max-width:688px){
+    #service-parent{
+        width:100%;
+      
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:10px;
+    }
+}
+@media only screen and (min-width:689px) and (max-width:1099px){
+    #service-parent{
+        width:100%;
+       
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:20px;
+    }
 }
